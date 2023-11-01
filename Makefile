@@ -15,3 +15,10 @@ acp:        ## == git add . , git commmit -m "", git push origin HEAD
 	git commit -m "$$message"; \
 	git push origin HEAD
 
+.PHONY: variant
+variant:      ## == git checkout variant
+	git checkout variant
+
+.PHONY: main
+main:         ## == git checkout main
+	git checkout main
