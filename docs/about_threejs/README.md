@@ -3,14 +3,14 @@
 Three.jsを学習していきます．備忘録
 
 ## 見出し
-- [Three.jsとは](#Three.jsとは)
+- [Three.jsとは](#Threejsとは)
 - [レンダラー](#レンダラー)
 
 
 [目次に戻る](../README.md)
 
 
-## Three.jsとは
+## Threejsとは
 以下ChatGPTによる返答
 
 
