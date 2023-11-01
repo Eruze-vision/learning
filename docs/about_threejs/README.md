@@ -10,7 +10,7 @@ Three.jsを学習していきます．備忘録
 [目次に戻る](../README.md)
 
 
-## Threejsとは
+## Three.jsとは
 以下ChatGPTによる返答
 
 
