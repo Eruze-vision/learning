@@ -15,9 +15,13 @@ Web Server Gateway Interface (WSGI) は、プログラミング言語 Python に
 
 ソース: Bing との会話 2023/11/2
 (1) Web Server Gateway Interface - Wikipedia. https://ja.wikipedia.org/wiki/Web_Server_Gateway_Interface.
+
 (2) uwsgi(ついでにdjango+MySQL)の初期設定 #Python3 - Qiita. https://qiita.com/Tett/items/9aafe2d53904047ec6d6.
+
 (3) 【サンプル付き】WSGIとは?その役割やメリットをわかりやすく解説. https://itc.tokyo/python/what-is-wsgi/.
+
 (4) Pythonアプリで使うWSGIとは？具体例付きでわかりやすく解説. https://itc.tokyo/python/wsgi-python/.
+
 (5) Python で WSGI (Web Server Gateway Interface) に従った .... https://qiita.com/niwasawa/items/69b7393284bce1bfbfe9.
 (6) undefined. http://127.0.0.1:8080/.
 
