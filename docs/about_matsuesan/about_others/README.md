@@ -14,6 +14,7 @@
 Web Server Gateway Interface (WSGI) は、プログラミング言語 Python において、Web サーバと Web アプリケーション（あるいは Web アプリケーションフレームワーク）を接続するための、標準化されたインタフェース定義である³⁴。WSGI は、Python の Web アプリケーションと Web サーバのやり取りを行うプロトコルであり、uwsgi は WSGI に対応した Python のアプリケーションサーバの一つです⁴。
 
 ソース: Bing との会話 2023/11/2
+
 (1) Web Server Gateway Interface - Wikipedia. https://ja.wikipedia.org/wiki/Web_Server_Gateway_Interface.
 
 (2) uwsgi(ついでにdjango+MySQL)の初期設定 #Python3 - Qiita. https://qiita.com/Tett/items/9aafe2d53904047ec6d6.
