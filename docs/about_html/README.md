@@ -178,4 +178,43 @@ CSSを使用することで、HTMLで記述したコンテンツの見た目を�
 やってみたけどよくわからない．
 保留
 
+# IPアドレスの詳細な情報を得る方法
+以下bing回答
+IPアドレスの詳細な情報を取得するためには、いくつかのツールが利用可能です。以下に、いくつかのツールを紹介します：
+
+1. **Advanced IP Scanner**¹：このツールは、指定した範囲のIPアドレスをスキャンしてローカルネットワーク上の端末を検出します¹。名前や端末のタイプ、OS、製造元、MACアドレスといった端末の詳細情報を取得して一覧表示できます¹。
+
+2. **CMAN**²：CMANは、IPアドレスやホスト、ドメインから地域情報を表示できます²。
+
+3. **Whois**²：Whoisはドメイン、もしくはIPアドレスを入力するだけで、Whois情報を検索できます²。
+
+これらのツールは、IPアドレスの詳細情報を取得するためのものですが、具体的な情報（汚染されているか、誰がそのような評価をしたのか、汚染されている場合どのような攻撃手段なのか）は、ツールの提供者やそのAPIによります¹²。また、これらのツールを使用する際には、そのツールの利用規約やポリシーを遵守することが重要です¹²。
+
+なお、Pythonでこれらのツールを利用するコードを書くことは可能です。以下に一例を示しますが、具体的なツールのAPIや形式によってコードは変わる可能性があります。
+
+```python
+import requests
+
+def get_ip_info(ip_address, tool_api_url):
+    response = requests.get(tool_api_url + ip_address)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
+
+ip_address = "192.0.2.0"  # ここに調査したいIPアドレスを入力します
+tool_api_url = "http://example.com/api/ipinfo?ip="  # ここにツールのAPI URLを入力します
+print(get_ip_info(ip_address, tool_api_url))
+```
+
+このコードは、指定されたIPアドレスの詳細情報を取得します。ただし、このコードはあくまで一例であり、具体的なツールのAPIによっては動作しない場合があります。また、ツールのAPIを利用する際には、そのAPIの利用規約を遵守することが重要です。具体的なツールのAPIやその利用方法については、各ツールの公式ドキュメンテーションをご覧ください。¹²。
+
+ソース: Bing との会話 2023/11/7
+(1) 「Advanced IP Scanner」指定した範囲のIPアドレスをスキャンし .... https://forest.watch.impress.co.jp/library/software/advipscanner/.
+(2) IPアドレスを特定する方法は？開示できる情報や情報開示ツール .... https://utilly.jp/article/ip-address/.
+(3) IPアドレス検索 | IPからプロバイダや住所を特定. https://bing.com/search?q=IP%e3%82%a2%e3%83%89%e3%83%ac%e3%82%b9%e3%81%ae%e8%a9%b3%e7%b4%b0%e3%81%aa%e6%83%85%e5%a0%b1%e3%82%92%e5%be%97%e3%82%8b%e3%83%84%e3%83%bc%e3%83%ab.
+(4) 【無料】ネットワーク調査のソフト一覧 - 窓の杜. https://forest.watch.impress.co.jp/library/nav/genre/inet/servernt_netanlz.html.
+(5) HP PC - IP アドレスの確認方法（windows11、Windows10 .... https://support.hp.com/jp-ja/document/c03395440.
+(6) undefined. http://www.advanced-ip-scanner.com/jp/.
+
 [目次に戻る](../README.md)
