@@ -173,4 +173,9 @@ CSSを使用することで、HTMLで記述したコンテンツの見た目を�
 (7) undefined. https://manaable.com/.
 (8) undefined. https://www.itra.co.jp/webmedia/what-is-html.html.
 
+# apache2
+[これを](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-ja)
+やってみたけどよくわからない．
+保留
+
 [目次に戻る](../README.md)
