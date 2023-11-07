@@ -4,7 +4,9 @@
 
 - [HTMLとJavaScriptとは](#HTMLとJavaScriptとは)
 - [JavaScriptの基本的な構文](#JavaScriptの基本的な構文)
+- [HTMLタグ一覧](#HTMLタグ一覧)
 - [メモ](#メモ)
+
 
 [目次に戻る](../README.md)
 
@@ -86,6 +88,25 @@ for (let i = 0; i < 10; i++) {
 (4) 【超初心者向け】JavaScriptの基本的な書き方講座. https://eng-entrance.com/javascript-write.
 (5) 【JavaScript 再入門】 基本構文編 #JavaScript - Qiita. https://qiita.com/ist-n-m/items/fe51c7105db9f32bb4df.
 (6) Getty Images. https://www.gettyimages.com/detail/photo/program-code-javascript-php-html-css-of-site-web-royalty-free-image/1202250586.
+
+[見出しに戻る](#見出し)
+
+## HTMLタグ一覧
+<html>：HTML文書全体を囲むルート要素を定義します。
+
+<head>：文書のメタ情報（タイトルやスタイルシートなど）を定義します。
+
+<body>：文書の本文を定義します。
+
+<h1>〜<h6>：見出しを定義します。数字が大きくなるほど見出しのレベルが下がります。
+
+<p>：段落を定義します。
+
+<a>：リンクを定義します。href属性を使用してリンク先のURLを指定します。
+
+<img>：画像を挿入します。src属性を使用して画像のURLを指定します。
+
+[参考資料](https://dev.dx.biztex.co.jp/it-column/htmltag/#:~:text=HTML%E3%82%BF%E3%82%B0%E3%81%A8%E3%81%AF%201%20%3Chtml%3E%20%EF%BC%9AHTML%E6%96%87%E6%9B%B8%E5%85%A8%E4%BD%93%E3%82%92%E5%9B%B2%E3%82%80%E3%83%AB%E3%83%BC%E3%83%88%E8%A6%81%E7%B4%A0%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%202%20%3Chead%3E%20%EF%BC%9A%E6%96%87%E6%9B%B8%E3%81%AE%E3%83%A1%E3%82%BF%E6%83%85%E5%A0%B1%EF%BC%88%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%84%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%E3%81%AA%E3%81%A9%EF%BC%89%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%203,6%20%3Ca%3E%20%EF%BC%9A%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%20...%207%20%3Cimg%3E%20%EF%BC%9A%E7%94%BB%E5%83%8F%E3%82%92%E6%8C%BF%E5%85%A5%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%20)
 
 [見出しに戻る](#見出し)
 
