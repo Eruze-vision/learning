@@ -5,6 +5,7 @@
 - [バックグラウンド処理の仕方](#バックグラウンド処理の仕方)
 - [バックグラウンド処理の止め方](#バックグラウンド処理の止め方)
 - [.gitignoreの使い方](#gitignoreの使い方)
+- [相対パスと絶対パス](#相対パスと絶対パス)
 
 [目次に戻る](../README.md)
 
@@ -101,5 +102,53 @@ nohup.out
 
 
 [見出しに戻る](#見出し)
+
+# 相対パスと絶対パス
+
+## 相対パス
+
+```bash
+def load_config(file_path):
+    base_dir = os.path.dirname(__file__)
+    # Tomlファイルのパス
+    toml_file = os.path.join(base_dir, file_path)
+    # Tomlファイルの読み込み
+    config = toml.load(toml_file)
+    return config
+```
+以下bing解説
+
+このコードbase_dir = os.path.dirname(__file__)は、現在のPythonスクリプトのディレクトリパスを取得しています。
+
+__file__はPythonの組み込み変数で、現在実行中のスクリプトのファイル名（フルパス）を表します。
+os.path.dirname()関数は、指定したパスのディレクトリ名（親ディレクトリのパス）を返します。
+したがって、os.path.dirname(__file__)は現在のスクリプトが存在するディレクトリのパスを返します。そして、そのパスはbase_dir変数に保存されます
+
+## 絶対パス
+
+```bash
+def load_config(file_path):
+    toml_file = os.path.join(os.environ['PYTHONPATH'], file_path)
+
+    # Tomlファイルの読み込み
+    config = toml.load(toml_file)
+    return config
+```
+
+以下bing解説
+
+このコードでは、環境変数PYTHONPATHを取得し、それにfile_pathを結合して絶対パスを作成しています。
+
+## PYTHONPATH
+
+確認方法
+
+```bash
+echo $PYTHONPATH
+```
+
+[見出しに戻る](#見出し)
+
+
 
 [目次に戻る](../README.md)
